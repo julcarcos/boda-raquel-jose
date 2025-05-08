@@ -1,11 +1,12 @@
+
 import { Component } from '@angular/core';
+import { CountdownComponent } from '../countdown/countdown.component';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone: true,
+  imports: [CountdownComponent],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
-
-}
+export class HeaderComponent {}
