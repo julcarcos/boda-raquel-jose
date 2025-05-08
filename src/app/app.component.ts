@@ -10,7 +10,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, HistoriaComponent, DetallesComponent, GaleriaComponent,  NavbarComponent],
+  imports: [HeaderComponent, HistoriaComponent, DetallesComponent, GaleriaComponent, NavbarComponent, CountdownComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
