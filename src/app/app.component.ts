@@ -6,7 +6,9 @@ import { DetallesComponent } from './detalles/detalles.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CountdownComponent } from './countdown/countdown.component';
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
