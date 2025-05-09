@@ -1,2 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* Contenedor que manejará el desplazamiento horizontal */
+.slider-container {
+    display: flex;
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow-x: hidden; /* Desactiva el desplazamiento horizontal global */
+  }
+  
+  /* Aseguramos que cada sección ocupe el 100% del ancho de la pantalla */
+  .slider-container > section {
+    flex-shrink: 0; /* No permite que se encojan */
+    width: 100vw; /* Cada sección ocupa el 100% del ancho */
+    height: 100vh; /* Cada sección ocupa el 100% de la altura */
+  }
+  
+  /* Estilo para las secciones de contenido */
+  .slider-container > section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Para ocultar las secciones cuando no son visibles */
+  .hidden {
+    display: none !important;
+  }
+  

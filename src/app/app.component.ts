@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent} from './header/header.component'
+import { HeaderComponent } from './header/header.component';
 import { HistoriaComponent } from './historia/historia.component';
 import { DetallesComponent } from './detalles/detalles.component';
 import { GaleriaComponent } from './galeria/galeria.component';
@@ -16,4 +16,9 @@ import { CountdownComponent } from './countdown/countdown.component';
 })
 export class AppComponent {
   title = 'Raquel y Jose';
+  currentSection = 0; // Sección inicial
+
+  goToSection(index: number) {
+    this.currentSection = index; // Cambia la sección visible
+  }
 }

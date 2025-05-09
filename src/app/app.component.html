@@ -1,23 +1,50 @@
-<!-- Header con imagen de fondo -->
-<div
-  class="relative h-screen w-full bg-cover bg-no-repeat bg-center text-center text-white"
-  style="background-image: url('/boda.png'); background-position: top center;">
-  
-  <!-- Capa oscura con contenido -->
-  <div class="absolute inset-0 bg-black/40 p-4 md:p-12 flex flex-col">
-    
-    <!-- Navbar arriba -->
-    <header class="w-full mb-6">
-      <app-navbar></app-navbar>
-    </header>
+<div class="relative w-screen h-screen overflow-hidden">
+    <!-- Imagen de fondo y Navbar, siempre visibles -->
+    <section class="relative h-screen w-full bg-cover bg-no-repeat bg-center text-center text-white"
+        style="background-image: url('/boda.png'); background-position: top center;">
+        <div class="absolute inset-0 bg-black/40 flex flex-col p-6 md:p-12">
+            <header class="w-full mb-6">
+                <app-navbar (navigateToSection)="goToSection($event)"></app-navbar>
+            </header>
+        </div>
+    </section>
 
-    <!-- Contenido centrado -->
-    <div class="flex-grow flex items-center justify-center">
-      <div>
-        <h1 class="text-7xl font-normal tracking-wide" style="font-family: 'Playfair Display', serif;">Raquel y Jose</h1>
-        <app-countdown></app-countdown>
-      </div>
+    <!-- Contenedor deslizante de contenido -->
+    <div class="slider-container absolute top-0 left-0 w-full h-full flex transition-transform duration-500">
+        <!-- Contenido de la primera sección (nombre y contador) -->
+        <section class="flex-shrink-0 w-full h-full flex justify-center items-center text-white"
+            [class.hidden]="currentSection !== 0">
+            <div class="text-center flex flex-col justify-center items-center">
+                <h1 class="text-7xl font-normal tracking-wide" style="font-family: 'Playfair Display', serif;">Raquel y
+                    Jose</h1>
+                <div class="mt-10">
+                    <app-countdown></app-countdown>
+                </div>
+                <button (click)="goToSection(1)"
+                    class="mt-10 px-6 py-3 bg-white text-black rounded-full shadow hover:bg-gray-200 transition">Ver
+                    más</button>
+            </div>
+        </section>
+
+        <!-- Contenido de la segunda sección (más información) -->
+        <section class="flex-shrink-0 w-full h-full flex justify-center items-center text-white"
+            [class.hidden]="currentSection !== 1">
+            <div class="max-w-xl w-full text-center flex flex-col justify-center items-center">
+                <!-- Título "¡Bienvenidos!" -->
+                <h2 class="text-3xl font-semibold mb-4">¡Bienvenidos!</h2>
+
+                <!-- Bloque de información adicional -->
+                <div class="mt-10 w-full">
+                    <p class="text-lg mb-6">Aquí encontrarás toda la información sobre nuestra boda.</p>
+                    <!-- Agrega más información aquí si lo deseas -->
+                    <p class="text-md mb-6">Detalles importantes sobre el evento, horario, lugar, y más.</p>
+                </div>
+
+                <!-- Botón para volver a la primera sección -->
+                <button (click)="goToSection(0)"
+                    class="mt-10 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">Volver</button>
+            </div>
+        </section>
+
     </div>
-    
-  </div>
 </div>

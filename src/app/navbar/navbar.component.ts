@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
 
+  @Output() navigateToSection = new EventEmitter<number>(); // Emite el índice de la sección
+
+  onNavigateToSection(index: number) {
+    this.navigateToSection.emit(index); // Emitimos el índice de la sección
+  }
 }

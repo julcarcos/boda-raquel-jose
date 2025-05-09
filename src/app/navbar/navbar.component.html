@@ -2,8 +2,10 @@
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-center">
       <div class="flex space-x-4 items-center">
-        <a href="#historia"  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Nuestra Historia</a>
-        <a href="#detalles" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Detalles del evento</a>
+        <button (click)="onNavigateToSection(1)" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+          Detalles del evento
+        </button>
+        
         <a href="#galeria" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Galería</a>
       </div>
     </div>
