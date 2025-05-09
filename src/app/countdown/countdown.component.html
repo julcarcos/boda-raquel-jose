@@ -1,20 +1,25 @@
-<div class="mt-6 flex justify-center z-20 px-4">
-  <div class="flex flex-wrap justify-center gap-4 text-white font-mono px-6 py-3  w-full max-w-2xl">
-    <div class="text-center flex-1 min-w-[70px]">
-      <div class="text-xl md:text-4xl font-bold">{{ timeLeft.days }}</div>
+<div class="mt-6 flex justify-center z-20 px-4 overflow-x-auto">
+  <div class="flex flex-nowrap gap-4 text-white font-mono px-6 py-3 w-full max-w-2xl whitespace-nowrap">
+    
+    <div class="text-center min-w-[70px]">
+      <div class="text-base sm:text-xl md:text-4xl font-bold">{{ timeLeft.days }}</div>
       <div class="text-xs md:text-sm uppercase tracking-wide">Días</div>
     </div>
-    <div class="text-center flex-1 min-w-[70px]">
-      <div class="text-xl md:text-4xl font-bold">{{ timeLeft.hours }}</div>
+
+    <div class="text-center min-w-[70px]">
+      <div class="text-base sm:text-xl md:text-4xl font-bold">{{ timeLeft.hours }}</div>
       <div class="text-xs md:text-sm uppercase tracking-wide">Horas</div>
     </div>
-    <div class="text-center flex-1 min-w-[70px]">
-      <div class="text-xl md:text-4xl font-bold">{{ timeLeft.minutes }}</div>
+
+    <div class="text-center min-w-[70px]">
+      <div class="text-base sm:text-xl md:text-4xl font-bold">{{ timeLeft.minutes }}</div>
       <div class="text-xs md:text-sm uppercase tracking-wide">Min</div>
     </div>
-    <div class="text-center flex-1 min-w-[70px]">
-      <div class="text-xl md:text-4xl font-bold">{{ timeLeft.seconds }}</div>
+
+    <div class="text-center min-w-[70px]">
+      <div class="text-base sm:text-xl md:text-4xl font-bold">{{ timeLeft.seconds }}</div>
       <div class="text-xs md:text-sm uppercase tracking-wide">Seg</div>
     </div>
+
   </div>
 </div>
