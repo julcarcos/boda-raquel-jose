@@ -1,14 +1,19 @@
-<nav class="sticky top-0 z-50 text-white px-6 py-0">
-  <div class="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-center">
-      <div class="flex space-x-4 items-center">
-        <!-- Botón con texto más grande -->
-        <button (click)="onNavigateToSection(1)" class="rounded-md px-4 py-3 text-2xl font-medium   hover:text-white">
-          Detalles del evento
-        </button>
-        
-        <a href="#galeria" class="rounded-md px-4 py-3 text-xl font-medium hover:bg-gray-700 hover:text-white">Confirma tu asistencia</a>
-      </div>
+<nav class="sticky top-0 z-50 text-white  px-4 sm:px-6 lg:px-8 shadow">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap justify-center items-center h-16 gap-4">
+      
+      <!-- Botón 1 -->
+      <button (click)="onNavigateToSection(1)" class="relative group px-4 py-2 text-lg sm:text-2xl font-medium">
+        Detalles del evento
+        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+      </button>
+
+      <!-- Botón 2 -->
+      <a href="#galeria" class="relative group px-4 py-2 text-base sm:text-xl font-medium">
+        Confirma tu asistencia
+        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
     </div>
   </div>
 </nav>
