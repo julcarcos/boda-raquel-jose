@@ -9,23 +9,25 @@
     </div>
 
     <!-- Contenedor scrollable con padding lateral -->
-    <div #scrollContainer
-         class="flex overflow-x-auto whitespace-nowrap scroll-smooth flex-grow px-8"
-         (scroll)="onScrollCheck()">
-      
+    <div #scrollContainer class="flex overflow-x-auto whitespace-nowrap scroll-smooth flex-grow px-8"
+      (scroll)="onScrollCheck()">
+
       <!-- Botones del menú -->
       <button (click)="navigateTo('detalles')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
         Detalles del evento
       </button>
-      <button (click)="navigateTo('faq')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
-        Preguntas frecuentes
-      </button>
+
       <button (click)="navigateTo('galeria')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
         Galería
       </button>
-      <button (click)="navigateTo('confirmacion')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
-        Confirma tu asistencia
+      <button (click)="navigateTo('faq')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
+        Preguntas frecuentes
       </button>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap inline-block" target="_blank"
+        rel="noopener noreferrer">
+        Confirma tu asistencia
+      </a>
     </div>
 
     <!-- Flecha derecha fija fuera del scroll -->
