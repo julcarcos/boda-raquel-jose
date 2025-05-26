@@ -1,19 +1,39 @@
-<nav class="sticky top-0 z-50 text-white px-4 sm:px-6 lg:px-8 shadow">
-  <div class="max-w-7xl mx-auto">
-    <div class="flex flex-nowrap justify-center items-center h-16 gap-2 sm:gap-4 overflow-x-auto whitespace-nowrap">
-      
-      <!-- Botón 1 -->
-      <button (click)="onNavigateToSection(1)" class="relative group px-2 sm:px-4 py-2 text-sm sm:text-xl font-medium">
-        Detalles del evento
-        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+<nav class="sticky top-0 z-50  bg-opacity-80 text-white px-4 sm:px-6 lg:px-8 shadow relative">
+  <div class="max-w-7xl mx-auto flex items-center relative">
+
+    <!-- Flecha izquierda fija fuera del scroll -->
+    <div class="flex-shrink-0 z-10">
+      <button *ngIf="showLeftArrow" (click)="scrollNav('left')" class="px-2 py-2">
+        &#8592;
       </button>
-
-      <!-- Botón 2 -->
-      <a href="#galeria" class="relative group px-2 sm:px-4 py-2 text-sm sm:text-xl font-medium">
-        Confirma tu asistencia
-        <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
-      </a>
-
     </div>
+
+    <!-- Contenedor scrollable con padding lateral -->
+    <div #scrollContainer
+         class="flex overflow-x-auto whitespace-nowrap scroll-smooth flex-grow px-8"
+         (scroll)="onScrollCheck()">
+      
+      <!-- Botones del menú -->
+      <button (click)="navigateTo('detalles')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
+        Detalles del evento
+      </button>
+      <button (click)="navigateTo('faq')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
+        Preguntas frecuentes
+      </button>
+      <button (click)="navigateTo('galeria')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
+        Galería
+      </button>
+      <button (click)="navigateTo('confirmacion')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
+        Confirma tu asistencia
+      </button>
+    </div>
+
+    <!-- Flecha derecha fija fuera del scroll -->
+    <div class="flex-shrink-0 z-10">
+      <button *ngIf="showRightArrow" (click)="scrollNav('right')" class="px-2 py-2">
+        &#8594;
+      </button>
+    </div>
+
   </div>
 </nav>
