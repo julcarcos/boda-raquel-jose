@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
-import { GaleriaComponent } from './galeria.component';
+@Component({
+  selector: 'app-galeria',
+  templateUrl: './galeria.component.html',
+  styleUrls: ['./galeria.component.css']
+})
+export class GaleriaComponent implements OnInit, OnDestroy {
+  currentImage: number = 1;
+  private intervalId: any;
+  totalImages: number = 47;
 
-describe('GaleriaComponent', () => {
-  let component: GaleriaComponent;
-  let fixture: ComponentFixture<GaleriaComponent>;
+  ngOnInit() {
+    this.intervalId = setInterval(() => {
+      this.currentImage = this.currentImage < this.totalImages ? this.currentImage + 1 : 1;
+    }, 3000); // Cambia cada 3 segundos
+  }
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [GaleriaComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(GaleriaComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
+  }
+}

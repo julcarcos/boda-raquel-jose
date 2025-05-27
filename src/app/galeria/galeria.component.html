@@ -1,8 +1,15 @@
-<section class="py-16 px-4">
-    <h2 class="text-3xl font-semibold text-center mb-8">Galería</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-cover bg-center h-64" style="background-image: url('assets/foto1.jpg');"></div>
-      <div class="bg-cover bg-center h-64" style="background-image: url('assets/foto2.jpg');"></div>
-      <div class="bg-cover bg-center h-64" style="background-image: url('assets/foto3.jpg');"></div>
+<section class="py-16 bg-gray-50">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+
+    <div class="relative w-full h-96 overflow-hidden rounded-2xl shadow-lg">
+      <img
+        [src]="'/' + currentImage + '.jpeg'"
+        alt="Imagen de la galería"
+        class="w-full h-full object-cover transition duration-1000 ease-in-out"
+      />
     </div>
-  </section>
+
+    <div class="mt-4 text-gray-500">Imagen {{ currentImage }} de 47</div>
+  </div>
+</section>

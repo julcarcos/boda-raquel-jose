@@ -1,11 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-galeria',
-  imports: [],
   templateUrl: './galeria.component.html',
-  styleUrl: './galeria.component.css'
+  styleUrls: ['./galeria.component.css']
 })
-export class GaleriaComponent {
+export class GaleriaComponent implements OnInit, OnDestroy {
+  currentImage: number = 1;
+  private intervalId: any;
+  totalImages: number = 47;
 
+  ngOnInit() {
+    this.intervalId = setInterval(() => {
+      this.currentImage = this.currentImage < this.totalImages ? this.currentImage + 1 : 1;
+    }, 3000); // Cambia cada 3 segundos
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
+  }
 }
