@@ -1,5 +1,5 @@
-<nav class="sticky top-0 z-50  bg-opacity-80 text-white px-4 sm:px-6 lg:px-8 shadow relative">
-  <div class="max-w-7xl mx-auto flex items-center relative">
+<nav class="sticky top-0 z-50 bg-opacity-80 text-white px-4 sm:px-6 lg:px-8 shadow relative">
+  <div class="w-full max-w-7xl mx-auto flex items-center relative min-w-0">
 
     <!-- Flecha izquierda fija fuera del scroll -->
     <div class="flex-shrink-0 z-10">
@@ -8,9 +8,10 @@
       </button>
     </div>
 
-    <!-- Contenedor scrollable con padding lateral -->
-    <div #scrollContainer class="flex overflow-x-auto whitespace-nowrap scroll-smooth flex-grow px-8"
-      (scroll)="onScrollCheck()">
+    <!-- Contenedor scrollable con padding reducido -->
+    <div #scrollContainer
+         class="flex overflow-x-auto whitespace-nowrap scroll-smooth flex-grow px-2 sm:px-4"
+         (scroll)="onScrollCheck()">
 
       <!-- Botones del menú -->
       <button (click)="navigateTo('detalles')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
@@ -20,12 +21,14 @@
       <button (click)="navigateTo('galeria')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
         Galería
       </button>
+
       <button (click)="navigateTo('faq')" class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap">
         Preguntas frecuentes
       </button>
+
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap inline-block" target="_blank"
-        rel="noopener noreferrer">
+         class="px-4 py-2 text-sm sm:text-xl font-medium whitespace-nowrap inline-block"
+         target="_blank" rel="noopener noreferrer">
         Confirma tu asistencia
       </a>
     </div>
