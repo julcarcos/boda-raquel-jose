@@ -1,30 +1,36 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
   styleUrls: ['./galeria.component.css']
 })
-export class GaleriaComponent implements OnInit, OnDestroy {
+export class GaleriaComponent implements OnInit {
   currentImage: number = 1;
   totalImages: number = 47;
-  private intervalId: any;
 
-  ngOnInit() {
+  ngOnInit(): void {
     const storedImage = sessionStorage.getItem('currentImage');
     if (storedImage) {
       this.currentImage = parseInt(storedImage, 10);
     }
-
-    this.intervalId = setInterval(() => {
-      this.currentImage = this.currentImage < this.totalImages ? this.currentImage + 1 : 1;
-
-      // Guardar en sessionStorage para mantener el valor en caso de refresh
-      sessionStorage.setItem('currentImage', this.currentImage.toString());
-    }, 3000);
   }
 
-  ngOnDestroy() {
-    clearInterval(this.intervalId);
+  nextImage(): void {
+    if (this.currentImage < this.totalImages) {
+      this.currentImage++;
+    } else {
+      this.currentImage = 1;
+    }
+    sessionStorage.setItem('currentImage', this.currentImage.toString());
+  }
+
+  prevImage(): void {
+    if (this.currentImage > 1) {
+      this.currentImage--;
+    } else {
+      this.currentImage = this.totalImages;
+    }
+    sessionStorage.setItem('currentImage', this.currentImage.toString());
   }
 }

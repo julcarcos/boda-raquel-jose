@@ -7,25 +7,27 @@
 
   <main class="flex-grow w-full overflow-x-hidden">
 
-    <section id="inicio"
-      class="relative h-screen w-full bg-cover bg-no-repeat bg-center text-center text-white overflow-hidden"
-      style="background-image: url('/boda3.jpg'); background-position: top center;">
-      <div class="absolute inset-0 bg-black/40 flex flex-col p-6 md:p-12">
-        <div class="flex-grow flex flex-col justify-start items-center text-white text-center mt-0">
-          <h1 class="text-7xl font-normal tracking-wide" style="font-family: 'Playfair Display', serif;">
-            Raquel y Jose
-          </h1>
-          <h2 class="text-5xl font-normal tracking-wide mt-2" style="font-family: 'Playfair Display', serif;">
-            01/11/2025
-          </h2>
-          <div class="mt-0">
-            <app-countdown></app-countdown>
-          </div>
-        </div>
+<section id="inicio"
+  class="relative min-h-screen w-full bg-center bg-no-repeat bg-fixed text-center text-white overflow-hidden"
+  style="background-image: url('/boda3.jpg'); background-size: cover;">
+  
+  <div class="absolute inset-0 bg-black/40 flex flex-col p-6 md:p-12">
+    <div class="flex-grow flex flex-col justify-start pt-12 md:pt-24 items-center text-white text-center">
+      <h1 class="text-5xl md:text-7xl font-normal tracking-wide" style="font-family: 'Playfair Display', serif;">
+        Raquel y Jose
+      </h1>
+      <h2 class="text-3xl md:text-5xl font-normal tracking-wide mt-2" style="font-family: 'Playfair Display', serif;">
+        01/11/2025
+      </h2>
+      <div class="mt-4">
+        <app-countdown></app-countdown>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="detalles" class="py-12 px-6 text-gray-900 bg-sky-50 overflow-x-hidden w-full">
+
+  <section id="detalles" class="py-12 px-6 text-gray-900 bg-sky-50 overflow-x-hidden w-full">
       <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl font-semibold text-center mb-12">Detalles del Evento</h2>
         <div class="relative border-l-4 border-gray-700 pl-6">
@@ -36,7 +38,7 @@
 
             <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex-1">
               <h3 class="text-xl font-semibold text-gray-900 flex items-center space-x-2">
-                <span>{{ item.hora }}</span> - <span>{{ item.titulo }}</span>
+                <span>{{ item.hora }}</span>  <span>{{ item.titulo }}</span>
               </h3>
               <p class="mt-1 text-gray-700">{{ item.descripcion }}</p>
             </div>
@@ -47,8 +49,8 @@
 
     <section id="galeria" class="bg-gray-100 py-12 px-6 text-gray-900 overflow-x-hidden w-full">
       <div class="max-w-5xl mx-auto text-center mb-8">
-        <h2 class="text-4xl font-semibold">Galería de Fotos</h2>
-        <p class="text-gray-600 mt-2">Un vistazo a nuestros mejores momentos juntos</p>
+        <h2 class="text-4xl font-semibold">Galería</h2>
+
       </div>
       <div class="max-w-4xl mx-auto">
         <app-galeria></app-galeria>

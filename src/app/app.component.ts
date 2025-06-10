@@ -36,6 +36,24 @@ export class AppComponent {
 
   constructor(private sanitizer: DomSanitizer) {
    const rawTimeline = [
+    {
+    hora: '12:15',
+    titulo: 'Llegada',
+    descripcion: 'Bienvenida a los invitados.',
+    icon: `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512" class="w-6 h-6">
+        <path d="M192 0c-35.3 0-64 28.7-64 64v160c0 17.7 14.3 32 32 32h96v48H64c-35.3 0-64 28.7-64 64v32h288v-32c0-35.3-28.7-64-64-64h-16v-48h96c17.7 0 32-14.3 32-32V64c0-35.3-28.7-64-64-64H192zM544 224h-32V64c0-17.7-14.3-32-32-32H416v320h96v-96h32c17.7 0 32-14.3 32-32v-64c0-17.7-14.3-32-32-32z"/>
+      </svg>`,
+  },
+   {
+    hora: '13:30',
+    titulo: 'Cóctel',
+    descripcion: 'Un brindis para celebrar juntos.',
+    icon: `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" class="w-6 h-6">
+        <path d="M64 32h384c17.7 0 32 14.3 32 32 0 8.5-3.3 16.6-9.4 22.6L304 253.3V464h56c13.3 0 24 10.7 24 24s-10.7 24-24 24H152c-13.3 0-24-10.7-24-24s10.7-24 24-24h56V253.3L41.4 86.6C35.3 80.6 32 72.5 32 64c0-17.7 14.3-32 32-32zM143.7 160h224.6L416 128H96l47.7 32z"/>
+      </svg>`,
+  },
   {
     hora: '12:30',
     titulo: 'Ceremonia',
@@ -98,6 +116,15 @@ export class AppComponent {
 	c6.689,0,12.111-5.424,12.111-12.114c0-6.691-5.422-12.114-12.111-12.114c-6.689,0-12.111,5.424-12.111,12.114
 	C198.558,136.431,203.98,141.855,210.669,141.855z"/>
 </svg>`,
+  },
+  {
+    hora: '00:00',
+    titulo: 'Despedida',
+    descripcion: 'Un último adiós y agradecimiento por venir.',
+    icon: `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512" class="w-6 h-6">
+        <path d="M320 0C143.6 0 0 143.6 0 320c0 35.3 28.7 64 64 64h96v-96h-96c0-141.4 114.6-256 256-256s256 114.6 256 256h-96v96h96c35.3 0 64-28.7 64-64C640 143.6 496.4 0 320 0z"/>
+      </svg>`,
   }
 ];
 

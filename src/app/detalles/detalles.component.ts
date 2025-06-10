@@ -1,9 +1,12 @@
 import { Component, ElementRef, QueryList, ViewChildren, AfterViewInit } from '@angular/core';
 import { trigger, style, transition, animate, state } from '@angular/animations';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-detalles',
   templateUrl: './detalles.component.html',
+    standalone: true,
+  imports: [CommonModule],
   styleUrls: ['./detalles.component.css'],
   animations: [
     trigger('fadeSlideIn', [

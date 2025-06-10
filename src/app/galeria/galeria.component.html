@@ -1,15 +1,33 @@
 <section class="py-16 bg-gray-50">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    
 
-    <div class="relative w-full h-96 overflow-hidden rounded-2xl shadow-lg">
+    <div class="relative w-full h-[40rem]  overflow-hidden rounded-2xl shadow-lg">
       <img
         [src]="'/' + currentImage + '.jpeg'"
         alt="Imagen de la galería"
-        class="w-full h-full object-cover transition duration-1000 ease-in-out"
+        class="w-full h-full object-cover transition duration-500 ease-in-out"
       />
+
+      <!-- Flecha izquierda -->
+      <button
+        (click)="prevImage()"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2  bg-opacity-40 hover:bg-opacity-50 text-white rounded-full p-3 text-5xl"
+        aria-label="Imagen anterior"
+      >
+        &#8592;
+      </button>
+
+      <!-- Flecha derecha -->
+      <button
+        (click)="nextImage()"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-opacity-40 hover:bg-opacity-70 text-white rounded-full p-3 text-5xl"
+        aria-label="Imagen siguiente"
+      >
+        &#8594;
+      </button>
     </div>
 
-    <div class="mt-4 text-gray-500">Imagen {{ currentImage }} de 47</div>
+    <div class="mt-4 text-gray-500">Imagen {{ currentImage }} de {{ totalImages }}</div>
+
   </div>
 </section>
