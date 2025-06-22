@@ -39,34 +39,35 @@ export class AppComponent {
     {
     hora: '12:15',
     titulo: 'Llegada',
-    descripcion: 'Bienvenida a los invitados.',
+    descripcion: '!Bienvenidos! Id tomando asiento que empezamos.',
     icon: `
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512" class="w-6 h-6">
         <path d="M192 0c-35.3 0-64 28.7-64 64v160c0 17.7 14.3 32 32 32h96v48H64c-35.3 0-64 28.7-64 64v32h288v-32c0-35.3-28.7-64-64-64h-16v-48h96c17.7 0 32-14.3 32-32V64c0-35.3-28.7-64-64-64H192zM544 224h-32V64c0-17.7-14.3-32-32-32H416v320h96v-96h32c17.7 0 32-14.3 32-32v-64c0-17.7-14.3-32-32-32z"/>
       </svg>`,
   },
-   {
-    hora: '13:30',
-    titulo: 'Cóctel',
-    descripcion: 'Un brindis para celebrar juntos.',
-    icon: `
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" class="w-6 h-6">
-        <path d="M64 32h384c17.7 0 32 14.3 32 32 0 8.5-3.3 16.6-9.4 22.6L304 253.3V464h56c13.3 0 24 10.7 24 24s-10.7 24-24 24H152c-13.3 0-24-10.7-24-24s10.7-24 24-24h56V253.3L41.4 86.6C35.3 80.6 32 72.5 32 64c0-17.7 14.3-32 32-32zM143.7 160h224.6L416 128H96l47.7 32z"/>
-      </svg>`,
-  },
-  {
+    {
     hora: '12:30',
     titulo: 'Ceremonia',
-    descripcion: 'La ceremonia se celebrará.',
+    descripcion: 'Si, para siempre empieza hoy',
     icon: `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="w-6 h-6">
         <path d="M320 32c-17.7 0-32 14.3-32 32v96H208V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96H64c-17.7 0-32 14.3-32 32v320h576V192c0-17.7-14.3-32-32-32H496V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96H352V64c0-17.7-14.3-32-32-32zM288 352c0-17.7 14.3-32 32-32s32 14.3 32 32v96H288v-96z"/>
       </svg>`,
   },
+   {
+    hora: '13:30',
+    titulo: 'Cóctel',
+    descripcion: '¡Brindemos por el amor (y los aperitivos)!',
+    icon: `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" class="w-6 h-6">
+        <path d="M64 32h384c17.7 0 32 14.3 32 32 0 8.5-3.3 16.6-9.4 22.6L304 253.3V464h56c13.3 0 24 10.7 24 24s-10.7 24-24 24H152c-13.3 0-24-10.7-24-24s10.7-24 24-24h56V253.3L41.4 86.6C35.3 80.6 32 72.5 32 64c0-17.7 14.3-32 32-32zM143.7 160h224.6L416 128H96l47.7 32z"/>
+      </svg>`,
+  },
+
   {
     hora: '15:00',
     titulo: 'Banquete',
-    descripcion: 'Disfrutaremos de una comida especial para todos.',
+    descripcion: 'Comer bien es parte del plan',
     icon: `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-6 h-6">
         <path d="M416 0c-17.7 0-32 14.3-32 32V96H128V32c0-17.7-14.3-32-32-32S64 14.3 64 32v96H0v64h64V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h256V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h64V128H448V32c0-17.7-14.3-32-32-32z"/>
@@ -75,7 +76,7 @@ export class AppComponent {
   {
     hora: '18:00',
     titulo: 'Baile',
-    descripcion: 'Momento para bailar y celebrar con música.',
+    descripcion: 'El primer baile de todos los que vendrán ',
     icon: `
      <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 width="35px" height="65px" viewBox="0 0 260 260" enable-background="new 0 0 260 260" xml:space="preserve">
@@ -120,7 +121,7 @@ export class AppComponent {
   {
     hora: '00:00',
     titulo: 'Despedida',
-    descripcion: 'Un último adiós y agradecimiento por venir.',
+    descripcion: 'Se cierra la barra, no el corazón. ¡Gracias por todo!',
     icon: `
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512" class="w-6 h-6">
         <path d="M320 0C143.6 0 0 143.6 0 320c0 35.3 28.7 64 64 64h96v-96h-96c0-141.4 114.6-256 256-256s256 114.6 256 256h-96v96h96c35.3 0 64-28.7 64-64C640 143.6 496.4 0 320 0z"/>
@@ -208,7 +209,7 @@ export class AppComponent {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m-7-7h1m16 0h1m-8-4v8m-4-4h8" />
                </svg>`,
-        answer: 'No hay medio de transporte privado. Los teléfonos de taxis en Jerez son:',
+        answer: 'No hemos concertado ningún medio de transporte privado. Los teléfonos de taxis en Jerez son:<br/> 657 804 545<br/> 956 34 48 60 <br/> 956 804 545 (WhatsApp)',
       },
       {
         question: '¿A quién puedo contactar si tengo dudas de último momento?',
