@@ -141,7 +141,7 @@ export class AppComponent {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                </svg>`,
-        answer: `Tanto la ceremonia como la celebración serán en <strong>Bodegas Fundador, Calle puerta de Rota, Jerez de la Frontera</strong>`,
+        answer: `Tanto la ceremonia como la celebración serán en <strong>Bodegas Fundador, Calle Puerta de Rota, Jerez de la Frontera</strong>`,
       },
       {
         question: '¿A qué hora debo llegar?',
@@ -158,7 +158,7 @@ export class AppComponent {
                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16 3.422a12.083 12.083 0 01-12.32 0L12 14z" />
                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v7" />
                </svg>`,
-        answer: 'Formal',
+        answer: 'Hombres: traje de chaqueta Mujeres: ropa formal',
       },
       {
         question: '¿Hay estacionamiento disponible?',
@@ -166,22 +166,16 @@ export class AppComponent {
                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 17v-5m3 0a3 3 0 00-6 0v5m-3 0h12" />
                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 21h8a2 2 0 002-2v-5a6 6 0 00-12 0v5a2 2 0 002 2z" />
                </svg>`,
-        answer: 'Hay parking disponible (confirmar con fundador cuántos)',
+        answer: 'Si, hay plazas de aparcamiento en la propia bodega. La entrada es por calle Puerta de Rota',
       },
-      {
-        question: '¿La ceremonia y la recepción serán en el mismo lugar?',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 10l9-7 9 7v11a2 2 0 01-2 2h-4v-7H9v7H5a2 2 0 01-2-2v-11z" />
-               </svg>`,
-        answer: 'Sí',
-      },
+   
       {
         question: '¿Pueden asistir niños?',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"></circle>
                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 21v-4a4 4 0 018 0v4" />
                </svg>`,
-        answer: 'No',
+        answer: ' Queremos que os relajeis, brindeis y baileis sin preocupaciones, así que esta fiesta es solo para mayores',
       },
       {
         question: '¿Hay algún tipo de comida especial (vegetariana, vegana, sin gluten, etc.)?',
@@ -195,22 +189,15 @@ export class AppComponent {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4a2 2 0 012-2h2a2 2 0 012 2v4m4-6v6m4-8v8" />
                </svg>`,
-        answer: 'Opciones:',
+        answer: 'Hemos acordado con los Apartamentos Jerez siglo XIX un descuento al reservar desde la web y usar el código <strong>RAQUELJOSE15</strong>. Podéis reservar aquí: https://hotels.cloudbeds.com/reservation/ppmq8a',
       },
-      {
-        question: '¿Cómo confirmo mi asistencia (RSVP)?',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-               </svg>`,
-        answer: 'Haz click en el link del menú superior, que te llevará a un formulario de confirmación',
-      },
-      {
-        question: '¿Habrá transporte disponible después de la fiesta?',
-        icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m-7-7h1m16 0h1m-8-4v8m-4-4h8" />
-               </svg>`,
-        answer: 'No hemos concertado ningún medio de transporte privado. Los teléfonos de taxis en Jerez son:<br/> 657 804 545<br/> 956 34 48 60 <br/> 956 804 545 (WhatsApp)',
-      },
+  {
+  question: '¿Cómo confirmo mi asistencia (RSVP)?',
+  icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+         </svg>`,
+  answer: 'Puedes confirmar tu asistencia en este  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGDJCnZ5xwrW7zxpKDtOAKu2Y175nUkS9M6qXR98O_mCpJlg/viewform?usp=sharing&ouid=103457335119933057856" target="_blank" rel="noopener noreferrer"><strong>enlace</strong></a> ',
+},
       {
         question: '¿A quién puedo contactar si tengo dudas de último momento?',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
