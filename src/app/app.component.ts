@@ -39,7 +39,7 @@ export class AppComponent {
     {
     hora: '12:15',
     titulo: 'Llegada',
-    descripcion: '!Bienvenidos! Id tomando asiento que empezamos.',
+    descripcion: '¡Bienvenidos! Id tomando asiento que empezamos.',
     icon: `
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512" class="w-6 h-6">
         <path d="M192 0c-35.3 0-64 28.7-64 64v160c0 17.7 14.3 32 32 32h96v48H64c-35.3 0-64 28.7-64 64v32h288v-32c0-35.3-28.7-64-64-64h-16v-48h96c17.7 0 32-14.3 32-32V64c0-35.3-28.7-64-64-64H192zM544 224h-32V64c0-17.7-14.3-32-32-32H416v320h96v-96h32c17.7 0 32-14.3 32-32v-64c0-17.7-14.3-32-32-32z"/>
@@ -48,7 +48,7 @@ export class AppComponent {
     {
     hora: '12:30',
     titulo: 'Ceremonia',
-    descripcion: 'Si, para siempre empieza hoy',
+    descripcion: '¡¡El momento más esperado!!',
     icon: `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="w-6 h-6">
         <path d="M320 32c-17.7 0-32 14.3-32 32v96H208V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96H64c-17.7 0-32 14.3-32 32v320h576V192c0-17.7-14.3-32-32-32H496V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96H352V64c0-17.7-14.3-32-32-32zM288 352c0-17.7 14.3-32 32-32s32 14.3 32 32v96H288v-96z"/>
@@ -189,7 +189,7 @@ export class AppComponent {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4a2 2 0 012-2h2a2 2 0 012 2v4m4-6v6m4-8v8" />
                </svg>`,
-        answer: 'Hemos acordado con los Apartamentos Jerez siglo XIX un descuento al reservar desde la web y usar el código <strong>RAQUELJOSE15</strong>. Podéis reservar aquí: https://hotels.cloudbeds.com/reservation/ppmq8a',
+        answer: 'Hemos acordado con los Apartamentos Jerez siglo XIX un descuento al reservar desde la web y usar el código <strong>RAQUELJOSE15</strong>. Podéis reservar   <a href="https://hotels.cloudbeds.com/reservation/ppmq8a"><strong>en este enlace</strong></a>',
       },
   {
   question: '¿Cómo confirmo mi asistencia (RSVP)?',
@@ -203,7 +203,7 @@ export class AppComponent {
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <path stroke-linecap="round" stroke-linejoin="round" d="M2 8.5a6.978 6.978 0 0010.5 10.5l2-2a1 1 0 011.2-.2 10.05 10.05 0 004-4 1 1 0 01-.2-1.2l-2-2z" />
                </svg>`,
-        answer: `Puedes ponerte en contacto con nosotros sin problema:<br />Jose : 697452585<br />Raquel: 675611191`,
+        answer: `Puedes ponerte en contacto con nosotros sin problema:<br />Jose: 697452585<br />Raquel: 675611191`,
       },
     ];
 
