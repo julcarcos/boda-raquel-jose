@@ -74,7 +74,7 @@ export class AppComponent {
       </svg>`,
   },
   {
-    hora: '18:00',
+    hora: '17:00',
     titulo: 'Baile',
     descripcion: 'El primer baile de todos los que vendrán ',
     icon: `
@@ -161,6 +161,16 @@ export class AppComponent {
         answer: 'Hombres: traje de chaqueta Mujeres: ropa formal',
       },
       {
+    question: '¿Qué puedo regalaros?',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
+             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16" />
+             <path stroke-linecap="round" stroke-linejoin="round" d="M4 4l16 16" />
+             <path stroke-linecap="round" stroke-linejoin="round" d="M20 4L4 20" />
+           </svg>`,
+    answer: 'Que nos acompañéis este día es nuestro mejor regalo, pero si queréis hacernos un detalle, os dejamos nuestro número de cuenta: ES24 0182 5332 1402 0408 1783',
+  },
+      {
         question: '¿Hay estacionamiento disponible?',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 17v-5m3 0a3 3 0 00-6 0v5m-3 0h12" />
@@ -169,6 +179,7 @@ export class AppComponent {
         answer: 'Si, hay plazas de aparcamiento en la propia bodega. La entrada es por calle Puerta de Rota',
       },
    
+      
       {
         question: '¿Pueden asistir niños?',
         icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
